@@ -14,8 +14,14 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: #333;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.6);
+    min-height: 100vh;
 }
 
 .hero {
@@ -24,31 +30,24 @@ body {
     color: white;
 }
 
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid white;
+}
+
 .hero h1 {
-    font-size: 3em;
+    font-size: 2.8em;
     margin-bottom: 10px;
 }
 
 .subtitle {
     font-size: 1.2em;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     opacity: 0.9;
-}
-
-.button {
-    display: inline-block;
-    background: white;
-    color: #667eea;
-    padding: 12px 30px;
-    margin: 10px 5px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: transform 0.3s;
-}
-
-.button:hover {
-    transform: scale(1.05);
 }
 
 section {
@@ -96,77 +95,63 @@ footer {
     text-align: center;
     padding: 30px;
     color: white;
-    background: #333;
+    background: #111;
 }
 </style>
 </head>
 
 <body>
 
+<div class="overlay">
+
 <div class="hero">
-    <h1>👋 Hi, I'm Charvie</h1>
+
+    <!-- ADD YOUR PHOTO FILE NAME BELOW -->
+    <img src="profile.jpg" alt="Charvie Photo" class="profile-img">
+
+    <h1>Hi, I'm Charvie</h1>
     <p class="subtitle">Data Science & Machine Learning Enthusiast</p>
 
-    <a href="https://github.com/kukrejacharvie-pixel" class="button" target="_blank">GitHub</a>
-    <a href="mailto:your-email@example.com" class="button">Contact</a>
 </div>
 
 <section>
 <div class="content">
-<h2>📊 Projects</h2>
+<h2>Projects</h2>
 
 <div class="project">
-<h3>1️⃣ Telecom Customer Churn Prediction</h3>
-
-<p><strong>Problem:</strong> Predict telecom customers likely to churn and reduce revenue leakage.</p>
-
+<h3>Telecom Customer Churn Prediction</h3>
+<p><strong>Problem:</strong> Predict telecom customers likely to churn.</p>
 <ul>
-<li>Analyzed 7,000+ records with 21 features</li>
-<li>Built Logistic Regression & XGBoost models</li>
-<li>Performed threshold tuning and evaluation</li>
-<li>Achieved ~80% accuracy</li>
+<li>Analyzed 7,000+ records</li>
+<li>Built Logistic Regression & XGBoost</li>
+<li>~80% model accuracy</li>
 </ul>
-
-<p><strong>Tech:</strong> Python, Pandas, Scikit-learn, XGBoost</p>
-
 <a href="https://github.com/kukrejacharvie-pixel/Churn-Prediction-Rate"
 target="_blank"
 class="project-button">View on GitHub →</a>
 </div>
 
 <div class="project">
-<h3>2️⃣ Fantasy Football Player Impact Prediction</h3>
-
-<p><strong>Problem:</strong> Predict impactful EPL players using match-level statistics.</p>
-
+<h3>Fantasy Football Impact Prediction</h3>
+<p><strong>Problem:</strong> Predict EPL player impact using ML.</p>
 <ul>
-<li>Engineered per-90 features and contextual metrics</li>
-<li>Trained XGBoost & Neural Network (MLP)</li>
-<li>Performed threshold sweeps & ensemble weighting</li>
-<li>ROC-AUC ~0.78 | Ensemble improved precision</li>
+<li>Engineered per-90 features</li>
+<li>Trained XGBoost + Neural Network</li>
+<li>ROC-AUC ~0.78</li>
 </ul>
-
-<p><strong>Tech:</strong> Python, XGBoost, Neural Networks, Cross-Validation</p>
-
 <a href="https://github.com/kukrejacharvie-pixel/Fantansy-Footbal-IBM-Watson-"
 target="_blank"
 class="project-button">View on GitHub →</a>
 </div>
 
 <div class="project">
-<h3>3️⃣ Image Captioning with PyTorch</h3>
-
-<p><strong>Problem:</strong> Generate natural language captions for images using deep learning.</p>
-
+<h3>Image Captioning (PyTorch)</h3>
+<p><strong>Problem:</strong> Generate captions from images.</p>
 <ul>
-<li>Trained CNN encoder + LSTM decoder model</li>
-<li>Processed 8,000+ images & 40,000 captions</li>
-<li>Built custom vocabulary & tokenization pipeline</li>
-<li>Evaluated training & validation loss curves</li>
+<li>CNN Encoder + LSTM Decoder</li>
+<li>8,000+ images trained</li>
+<li>End-to-end deep learning pipeline</li>
 </ul>
-
-<p><strong>Tech:</strong> PyTorch, CNN, LSTM, NLP preprocessing</p>
-
 <a href="https://github.com/kukrejacharvie-pixel/image-captioning-pytorch"
 target="_blank"
 class="project-button">View on GitHub →</a>
@@ -175,20 +160,12 @@ class="project-button">View on GitHub →</a>
 </div>
 </section>
 
-<section style="background:#f5f5f5;">
-<div class="content">
-<h2>👩‍💻 About Me</h2>
-<p>
-I enjoy solving real-world problems using machine learning and data-driven approaches.
-My focus is on building end-to-end ML pipelines — from data cleaning and feature engineering
-to model training, evaluation, and interpretation.
-</p>
-</div>
-</section>
-
 <footer>
-© 2026 Charvie Kukreja | Built with GitHub Pages
+© 2026 Charvie Kukreja
 </footer>
+
+</div>
 
 </body>
 </html>
+
