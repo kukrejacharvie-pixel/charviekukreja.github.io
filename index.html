@@ -1,166 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charvie Kukreja | Data Science Portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charvie Kukreja | Data Science Portfolio</title>
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #333;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        .hero {
-            text-align: center;
-            padding: 80px 20px;
-            color: white;
-        }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+}
 
-        .hero h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-        }
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+}
 
-        .subtitle {
-            font-size: 1.2em;
-            margin-bottom: 30px;
-            opacity: 0.9;
-        }
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
 
-        .button {
-            display: inline-block;
-            background: white;
-            color: #667eea;
-            padding: 12px 30px;
-            margin: 10px 5px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: transform 0.3s;
-        }
+.subtitle {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
 
-        .button:hover {
-            transform: scale(1.05);
-        }
+.button {
+    display: inline-block;
+    background: white;
+    color: #667eea;
+    padding: 12px 30px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
 
-        section {
-            background: white;
-            padding: 60px 20px;
-        }
+.button:hover {
+    transform: scale(1.05);
+}
 
-        .content {
-            max-width: 900px;
-            margin: 0 auto;
-        }
+section {
+    background: white;
+    padding: 60px 20px;
+}
 
-        h2 {
-            margin-bottom: 20px;
-            color: #333;
-        }
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+}
 
-        h3 {
-            margin-bottom: 15px;
-        }
+h2 {
+    margin-bottom: 20px;
+}
 
-        ul {
-            margin-left: 20px;
-            margin-bottom: 20px;
-        }
+h3 {
+    margin-bottom: 15px;
+}
 
-        li {
-            margin-bottom: 8px;
-        }
+ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
 
-        .project-button {
-            display: inline-block;
-            margin-top: 15px;
-            background: #667eea;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-        }
+li {
+    margin-bottom: 8px;
+}
 
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: white;
-            background: #333;
-        }
-    </style>
+.project-button {
+    display: inline-block;
+    margin-top: 15px;
+    background: #667eea;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: white;
+    background: #333;
+}
+</style>
 </head>
 
 <body>
 
-    <!-- HERO SECTION -->
-    <div class="hero">
-        <h1>👋 Hi, I'm Charvie</h1>
-        <p class="subtitle">Data Science & Machine Learning Enthusiast</p>
+<div class="hero">
+    <h1>👋 Hi, I'm Charvie</h1>
+    <p class="subtitle">Data Science & Machine Learning Enthusiast</p>
 
-        <a href="https://github.com/kukrejacharvie-pixel" class="button" target="_blank">View My GitHub</a>
-        <a href="mailto:your-email@example.com" class="button">Contact Me</a>
+    <a href="https://github.com/kukrejacharvie-pixel" class="button" target="_blank">View My GitHub</a>
+    <a href="mailto:your-email@example.com" class="button">Contact Me</a>
+</div>
+
+<section>
+    <div class="content">
+        <h2>📊 Featured Project</h2>
+
+        <h3>Telecom Customer Churn Prediction</h3>
+
+        <p><strong>Business Problem:</strong> Telecom companies face revenue loss due to customer churn. The goal was to predict customers likely to cancel services and enable proactive retention strategies.</p>
+
+        <p><strong>Approach:</strong></p>
+        <ul>
+            <li>Analyzed 7,000+ customer records with 21 features</li>
+            <li>Performed data cleaning and feature engineering</li>
+            <li>Built Logistic Regression and XGBoost models</li>
+            <li>Evaluated performance using accuracy, precision, and recall</li>
+        </ul>
+
+        <p><strong>Key Results:</strong></p>
+        <ul>
+            <li>Achieved ~80% prediction accuracy</li>
+            <li>XGBoost improved churn detection performance</li>
+            <li>Delivered actionable insights for targeted retention campaigns</li>
+        </ul>
+
+        <p><strong>Tech Stack:</strong> Python, Pandas, NumPy, Scikit-learn, XGBoost, Seaborn, Matplotlib</p>
+
+        <a href="https://github.com/kukrejacharvie-pixel/Churn-Prediction-Rate" 
+           target="_blank" 
+           class="project-button">
+           View Project on GitHub →
+        </a>
     </div>
+</section>
 
-    <!-- PROJECT SECTION -->
-    <section>
-        <div class="content">
+<section style="background:#f5f5f5;">
+    <div class="content">
+        <h2>👩‍💻 About Me</h2>
+        <p>
+            I am passionate about solving real-world business problems using data-driven approaches.
+            My work focuses on combining analytical thinking with machine learning techniques
+            to generate actionable business insights.
+        </p>
+    </div>
+</section>
 
-            <h2>📊 Featured Project</h2>
-
-            <h3>Telecom Customer Churn Prediction</h3>
-
-            <p><strong>Business Problem:</strong> Telecom companies face revenue loss due to customer churn. The goal was to predict customers likely to cancel services and enable proactive retention strategies.</p>
-
-            <p><strong>Approach:</strong></p>
-            <ul>
-                <li>Analyzed 7,000+ customer records with 21 features</li>
-                <li>Performed data cleaning and feature engineering</li>
-                <li>Built Logistic Regression and XGBoost models</li>
-                <li>Evaluated performance using accuracy, precision, and recall</li>
-            </ul>
-
-            <p><strong>Key Results:</strong></p>
-            <ul>
-                <li>Achieved ~80% prediction accuracy</li>
-                <li>XGBoost improved churn detection performance</li>
-                <li>Delivered actionable insights for targeted retention campaigns</li>
-            </ul>
-
-            <p><strong>Tech Stack:</strong> Python, Pandas, NumPy, Scikit-learn, XGBoost, Seaborn, Matplotlib</p>
-
-            <a href="https://github.com/kukrejacharvie-pixel/Churn-Prediction-Rate" 
-               target="_blank" 
-               class="project-button">
-               View Project on GitHub →
-            </a>
-
-        </div>
-    </section>
-
-    <!-- ABOUT SECTION -->
-    <section style="background:#f5f5f5;">
-        <div class="content">
-            <h2>👩‍💻 About Me</h2>
-            <p>
-                I am passionate about solving real-world business problems using data-driven approaches.
-                My work focuses on combining analytical thinking with machine learning techniques
-                to generate actionable business insights.
-            </p>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        © 2026 Charvie Kukreja | Built with GitHub Pages
-    </footer>
+<footer>
+    © 2026 Charvie Kukreja | Built with GitHub Pages
+</footer>
 
 </body>
 </html>
+
 
